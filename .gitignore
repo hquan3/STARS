@@ -1,0 +1,70 @@
+# Data are intentionally not distributed in this repository.
+data/*
+!data/README.md
+
+# Generated results: retain only the compact manuscript summary.
+results/*
+!results/README.md
+!results/metrics_summary.csv
+
+# Common tabular and array data artifacts.
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.pkl.gz
+*.gz
+
+# Model weights and training artifacts.
+*.pt
+*.pth
+*.ckpt
+*.pb
+*.index
+*.data-*
+checkpoints/
+lightning_logs/
+wandb/
+runs/
+
+# Experiment intermediates.
+knn_*.json
+cluster_labels*.csv
+training_log*.csv
+reconstruction_*.csv
+
+# Python and notebook state.
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Editors and operating systems.
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local secrets and configuration.
+.env
+.env.*
+!.env.example
+
+# Literature and local manuscript drafts.
+literature/
+papers/
+drafts/
+
+# Explicitly retain the small, curated files above despite broad patterns.
+!results/metrics_summary.csv
